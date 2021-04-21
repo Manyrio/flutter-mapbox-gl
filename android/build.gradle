@@ -13,10 +13,7 @@ buildscript {
 }
 
 rootProject.allprojects {
-    def token = System.getenv('SDK_REGISTRY_TOKEN')
-    if (token == null || token.empty) {
-        throw new Exception("SDK Registry token is null. See README.md for more information.")
-    }
+    def token = 'sk.eyJ1IjoibWFueXJpbyIsImEiOiJja25yb3V2eWowcXVkMm5wZmN5eG5nZmxqIn0.mtuOC9lEi6mkuRVSo2TciA'
     repositories {
         google()
         jcenter()
